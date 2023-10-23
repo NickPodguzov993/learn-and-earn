@@ -1,0 +1,42 @@
+.card {
+  position: relative;
+  .learn {
+    position: absolute;
+    z-index: 1;
+    top: 12px;
+    right: 30px;
+  }
+}
+
+.photo {
+  border-radius: 5%;
+  padding-right: 20px;
+  width: 231px;
+  height: 342px;
+}
+
+.text {
+  position: absolute;
+  width: 110px;
+  z-index: 1;
+ top: 280px;
+  left: 20px;
+}
+
+.earn {
+  position: absolute;
+  z-index: 2;
+  background-color: #EF7B3C;
+  width: 75px;
+  border-radius: 20px;
+  padding-left: 10px;
+  display: flex;
+  top: 15px;
+  left: 15px;
+
+  .description {
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+  }
+}
