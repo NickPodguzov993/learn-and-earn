@@ -1,3 +1,131 @@
 .sideBar {
-  width: 271px;
+  max-width: 271px;
+  min-width: 271px;
 }
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+  padding-top: 10px;
+  .bell {
+    padding-right: 10px;
+    position: relative;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    background: #FF0000;
+    border-radius: 50%;
+    z-index: 1;
+    left: 200px;
+  }
+}
+
+.inputSearch {
+  border: 1px solid rgba(255,255,255,0.3);
+  width: 230px;
+  height: 50px;
+  border-radius: 30px;
+  position: relative;
+  margin-top: 30px;
+  margin-left: 20px;
+
+  .search {
+    position: absolute;
+    top:15px;
+    left: 80px;
+    color: white;
+    opacity: 1;
+  }
+}
+
+.title {
+  opacity: 0.5;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.menuPart {
+  font-size: 14px;
+  margin-left: 20px;
+}
+
+.homeMenu {
+  display: flex;
+  opacity: 0.5;
+  &:hover {
+    opacity: 1;
+  }
+  .home {
+    padding-left: 10px;
+    padding-top: 3px;
+  }
+}
+.watchMenu {
+  display: flex;
+  opacity: 0.5;
+  &:hover {
+    opacity: 1;
+  }
+  .watch {
+    padding-left: 10px;
+    padding-top: 3px;
+  }
+  .numberWatch {
+    margin-left: 150px;
+    margin-top: 15px;
+    padding-left: 7px;
+    width: 15px;
+    height: 25px;
+    background-color: #EF7B3C;
+    border-radius: 40%;
+  }
+}
+
+.communityMenu {
+  display: flex;
+  opacity: 0.5;
+  &:hover {
+    opacity: 1;
+  }
+  .community {
+    padding-left: 10px;
+    padding-top: 3px;
+  }
+    .groupAvatar {
+      display: block;
+      padding-left: 70px;
+      padding-top: 10px;
+    }
+}
+
+.helpMenu {
+  display: flex;
+  margin-top: 480px;
+  opacity: 0.5;
+  &:hover {
+    opacity: 1;
+  }
+  .help {
+    padding-left: 10px;
+    padding-top: 3px;
+  }
+}
+
+.greenLine {
+  position: absolute;
+  content: '';
+  background-color: #6FD964;
+  height: 43px;
+  width: 4px;
+  border-radius: 20%;
+  top:350px
+}
+
+
+
+

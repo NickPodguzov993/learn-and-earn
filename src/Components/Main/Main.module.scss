@@ -7,4 +7,30 @@
 .cards {
   display: flex;
   flex-wrap: wrap;
+  position: relative;
+
+  &::before {
+    content: 'Trending';
+    position: absolute;
+    font-weight: 700;
+    font-size: 24px;
+    z-index: 1;
+    left: 5px;
+    top: 370px;
+  }
+  &::after {
+    content: 'See All';
+    position: absolute;
+    font-weight: 400;
+    font-size: 14px;
+    z-index: 1;
+    left: 890px;
+    top: 380px;
+  }
+}
+
+.vector {
+  position: absolute;
+  left: 935px;
+  top: 382px
 }

@@ -11,6 +11,7 @@ import photo5 from '../../assets/photo5.png'
 import photo6 from '../../assets/photo6.png'
 import photo7 from '../../assets/photo7.png'
 import photo8 from '../../assets/photo8.png'
+import vectorRight from '../../assets/VectorRight.svg'
 
 export const Main = () => {
     return (
@@ -25,6 +26,7 @@ export const Main = () => {
                 <NavLink to={'/Slider'}><Card image={photo6} text={'Fundamentals of investment'}/></NavLink>
                 <NavLink to={'/Slider'}><Card image={photo7} text={'Fundamentals of investment'}/></NavLink>
                 <NavLink to={'/Slider'}><Card image={photo8} text={'Fundamentals of investment'}/></NavLink>
+                <img className={style.vector} src={vectorRight}/>
             </div>
         </div>
     );
