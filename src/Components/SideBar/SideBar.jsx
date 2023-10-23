@@ -1,11 +1,13 @@
 import React from 'react';
 import style from './SideBar.module.scss'
+import bell from '../../assets/bell.svg'
+import avatar from '../../assets/avatar1.png'
 
 export const SideBar = () => {
     return (
         <div className={style.sideBar}>
-        <div className={style.bell}></div>
-            <div className={style.avatar}></div>
+            <img src={bell}/>
+            <img src={avatar}/>
             <input type="text" />
             <h4>MAIN</h4>
             <p>Home</p>

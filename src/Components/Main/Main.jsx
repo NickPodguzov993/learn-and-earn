@@ -1,4 +1,5 @@
 import React from 'react';
+import {NavLink} from "react-router-dom";
 import {Header} from "./Header/Header";
 import {Card} from "./Card/Card";
 import style from './Main.module.scss'
@@ -16,14 +17,14 @@ export const Main = () => {
         <div className={style.main}>
            <Header/>
             <div className={style.cards}>
-                <Card image={photo1} text={'Fundamentals of investment'}/>
-                <Card image={photo2} text={'Fundamentals of investment'}/>
-                <Card image={photo3} text={'Fundamentals of investment'}/>
-                <Card image={photo4} text={'Fundamentals of investment'}/>
-                <Card image={photo5} text={'Fundamentals of investment'}/>
-                <Card image={photo6} text={'Fundamentals of investment'}/>
-                <Card image={photo7} text={'Fundamentals of investment'}/>
-                <Card image={photo8} text={'Fundamentals of investment'}/>
+                <NavLink to={'/Slider'}><Card image={photo1} text={'Fundamentals of investment'}/></NavLink>
+                <NavLink to={'/Slider'}><Card image={photo2} text={'Fundamentals of investment'}/></NavLink>
+                <NavLink to={'/Slider'}><Card image={photo3} text={'Fundamentals of investment'}/></NavLink>
+                <NavLink to={'/Slider'}><Card image={photo4} text={'Fundamentals of investment'}/></NavLink>
+                <NavLink to={'/Slider'}><Card image={photo5} text={'Fundamentals of investment'}/></NavLink>
+                <NavLink to={'/Slider'}><Card image={photo6} text={'Fundamentals of investment'}/></NavLink>
+                <NavLink to={'/Slider'}><Card image={photo7} text={'Fundamentals of investment'}/></NavLink>
+                <NavLink to={'/Slider'}><Card image={photo8} text={'Fundamentals of investment'}/></NavLink>
             </div>
         </div>
     );
